@@ -4,7 +4,7 @@ const payment_container  = document.querySelector("#payment-container");
     const id = JSON.parse(localStorage.getItem("idAndMonth")) || [];
     const payment = async() => {
 
-        const res = await fetch(`http://localhost:3000/scooties/${id}`);
+        const res = await fetch(`https://royalbrotherspage.herokuapp.com/scooties/${id}`);
         const data = await res.json();
         displayData(data);
 

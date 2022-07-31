@@ -5,7 +5,7 @@ import {footer} from "./Components/footer.js"
 let navbar_div = document.getElementById("navbar-container");
 //navbar_div.innerHTML = navbar()
 
-let url = "http://localhost:3000/bikes"
+let url = "https://royalbrotherspage.herokuapp.com/bikes"
 
 let data = await getData(url)
 console.log(data)

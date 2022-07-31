@@ -26,7 +26,7 @@ dropofft.innerHTML = `<p>${data.drop_time}</p>`;
 
 let bike_id = JSON.parse(localStorage.getItem("product_id"));
 
-let url = `http://localhost:3000/bikes/${bike_id}`;
+let url = `https://royalbrotherspage.herokuapp.com/bikes/${bike_id}`;
 
 const getData = async () => {
   let res = await fetch(url);

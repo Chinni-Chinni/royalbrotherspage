@@ -34,7 +34,7 @@ price_div.innerHTML = `<h4>Total </h4> <span> <strong>₹ ${price}</strong></spa
 //getting data 
 let bike_id = JSON.parse(localStorage.getItem("product_id"))
 
-let url = `http://localhost:3000/bikes/${bike_id}`;
+let url = `https://royalbrotherspage.herokuapp.com/bikes/${bike_id}`;
 
 const getData = async() => {
   let res = await fetch(url);
@@ -59,7 +59,7 @@ const showData = (data1) => {
     bike.append(div)
 }
 
-let url1 = `http://localhost:3000/bikes/${bike_id}`;
+let url1 = `https://royalbrotherspage.herokuapp.com/scooties/bikes/${bike_id}`;
 
 const getKM = async() => {
     let res = await fetch(url1)

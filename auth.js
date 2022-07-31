@@ -136,7 +136,7 @@ async function addData() {
 
         let password = document.getElementById("userPass").value;
 
-        let user = await fetch('http://localhost:3000/users');
+        let user = await fetch('https://royalbrotherspage.herokuapp.com/users');
 
         let userData = await user.json();
 
@@ -166,7 +166,7 @@ async function addData() {
             password
         };
 
-        let res = await fetch(`http://localhost:3000/users`,{
+        let res = await fetch(`https://royalbrotherspage.herokuapp.com/users`,{
             method: "POST",
             body: JSON.stringify(body),
             headers:{
@@ -186,7 +186,7 @@ async function authData(){
     event.preventDefault();
     try {
         
-        let res = await fetch(`http://localhost:3000/users`);
+        let res = await fetch(`https://royalbrotherspage.herokuapp.com/users`);
 
         let data = await res.json();
 

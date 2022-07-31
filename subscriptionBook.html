@@ -330,7 +330,7 @@
     const booking_container = document.querySelector("#Booking-container")
  const getData = async()=>{
 
-    const url = ` http://localhost:3000/scooties`;
+    const url = ` https://royalbrotherspage.herokuapp.com/scooties`;
     const res = await fetch(url);
     const data = await res.json();
     console.log(data);
