@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./style/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/footer.css">
+</head>
+
+<body>
+    <div id="navbarContainer">
+        <div id="navLogoDiv">
+            <a href="index.html"> <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo"> </a>
+        </div>
+        <div id="navOptions">
+            <div>
+                <a href="subscription.html">
+                <img style="width: 54px;"
+                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_logo-7618eb109a17dcfa44e88596c831606746fc124a000553458d6b7fc1bf9a6345.png"
+                    alt="">
+                </a>
+            </div>
+            <div> <a href="tariff.html"> Tarrif</a></div>
+            <div style="display: flex;">What's new &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+            <div>Careers</div>
+            <div> <a href="offer.html">Offers</a></div>
+         
+            <div style="display: flex;">Partner with us &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+        </div>
+        <div id="navRight">
+            <div id="navLoginSignup">
+               <a href="./auth.html"><div id="login">Login</div> </a> 
+                <a href="./auth.html"><div id="signup">Signup</div> </a>
+              
+            </div>
+            <div id="navLocation" style="cursor: pointer;">
+                <img src="https://i.ibb.co/N160zRK/location.png" alt="">
+                <button>
+                    <p id="location">Banglore</p>
+                </button>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modelTop">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png"
+                        alt="">
+                    <p style="font-weight: 300;"> | &nbsp; Rental Bike</p>
+                </div>
+                <div id="modelSearch">
+                    <div id="searchicon">
+                        <img src="https://i.ibb.co/4MPMFh4/search.png" alt="">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Search or type city to select">
+                    </div>
+                </div>
+                <div id="modelCity">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Header Section Start -->
+    <div id="headerContainer">
+        <div id="header">
+            <form action="">
+                <h2>Search your next ride</h2>
+                <label>Pickup</label><br>
+                <input placeholder="Date" onfocus="(this.type='date')">
+                <input placeholder="Time" onfocus="(this.type='time')"><br>
+                <label>Dropoff</label><br>
+                <input placeholder="Date" onfocus="(this.type='date')">
+                <input placeholder="Time" onfocus="(this.type='time')"><br>
+                <input type="button" value="Search" id="headerButton">
+            </form>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="features-service-child">
+            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_sanitized-a37325c03fb50fd9b2783d574ba67c40cb7b8a90d5951a85f72095904943e1d6.png"
+                alt="">
+            <p class="features-service-child">Sanitizer Vehicles</p>
+        </div>
+        <div class="features-service-child">
+            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_insurance-84ee18a118bee4cfc4f774e0dbdb5d24431af458eb583d5d1c5822801e388764.png"
+                alt="">
+            <p class="features-service-child">Vehicle Insurance</p>
+        </div>
+        <div class="features-service-child">
+            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_assistance-ec66ebeeb0ebb01468fc1729165040e172820de83d5037cf47a73f4e19177d68.png"
+                alt="">
+            <p class="features-service-child">24/7 Roadside Assistance</p>
+        </div>
+        <div class="features-service-child">
+            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_maintainence-4ac25e7eb9ad6f8b78ec52640a7310d8083a21823e1fb54ca9872076c2bc5f34.png"
+                alt="">
+            <p class="features-service-child">Bike Maintenance</p>
+        </div>
+
+    </section>
+
+
+    <div id="headertwo">
+        <div id="twoheader">
+            <input type="button" value="Subscribe now  >>" id="headerButton">
+            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+        </div>
+        <!-- homepageslider -->
+        <h2 style="text-align: center; margin-top: 60px;">WE BELIEVE IN QUALITY</h2>
+        <hr id="homepagehr" />
+
+        <div id="sliderContainer"></div>
+
+        <!-- features img -->
+        <h1 style="text-align: center;margin-bottom: 50px;">FEATURED IN</h1>
+        <hr id="featurehr" /><br>
+        <div id="imagefeature">
+            <img src="./img/betterindia.jpeg" alt="">
+            <img src="./img/thehindu.jpeg" alt="">
+            <!-- <img src="./img/economictime.jpg" alt=""> -->
+            <img src="./img/timeofindia.jpeg" alt="">
+            <img src="./img/inc42.jpeg" alt="">
+            <img src="./img/moneycontrol.jpeg" alt="">
+        </div>
+    </div>
+
+    <div id="margin-required"></div>
+    <div id="footer"></div>
+
+</body>
+<script type="module" src="./index.js"></script>
+
+</html>
